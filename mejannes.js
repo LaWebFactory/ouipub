@@ -63,8 +63,7 @@ var balMarkers = new L.MarkerClusterGroup({
 for (var i = 0; i < dataMarkers.length; i++) {
     var latLng = new L.LatLng(dataMarkers[i][2], dataMarkers[i][1]);
     var marker = new L.Marker(latLng, {title: dataMarkers[i][0]});
-    marker.bindPopup(   '<h3>'+dataMarkers[i][0]+'</h3>' +
-                        '<form><button type="submit" class="btn btn-primary">SUPPRIMER</button></form>')
+    marker.bindPopup( '<h6>'+dataMarkers[i][0]+'</h6>')
     balMarkers.addLayer(marker);
 }
 
